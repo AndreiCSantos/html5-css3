@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-element</title>
+    <style>
+        a{
+            color: rgb(47, 47, 252);
+        }
+
+        a:visited {
+            color: rgb(175, 8, 8);
+        }
+
+        a:hover {
+            color: black;
+        }
+
+        a:active {
+            color: rgb(118, 165, 42);
+        }
+
+        a::before {
+            content: "=>";
+        }
+
+        a::after {
+            content: "<=";
+        }
+
+    </style>
+</head>
+<body>
+    <h1>personalizando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank">curso em video canal</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank">curso em video site</a></li>
+    </ul>
+</body>
+</html>
